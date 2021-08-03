@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,4 +15,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* NavBar */
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  background-color: chartreuse;
+  justify-content: center;
+  gap: 2%;
+  padding: 0.7em;
+}
+
+/* Home */
+
+#homeContainer {
+  background-color: aqua;
+}
+
+#movieGridContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#movieGridContainer > div {
+  border: 1px solid black;
+  padding: 2rem;
 }
